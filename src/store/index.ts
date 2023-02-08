@@ -5,8 +5,8 @@ import { persistReducer } from "redux-persist"
 import {configureStore} from "@reduxjs/toolkit";
 import * as process from "process";
 import thunk from "redux-thunk";
-
-const reducers = combineReducers({});
+import cart from "@/store/cart-slice";
+const reducers = combineReducers({ cart });
 
 const config = {
   key: 'root',
